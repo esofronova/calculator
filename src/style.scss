@@ -1,0 +1,34 @@
+.calculator {
+  background-image: linear-gradient(#555, #222);
+  box-shadow: 0 5px 10px #333;
+  padding: 1.2em 1em;
+  width: 30rem;
+
+  @media screen and (max-width: 576px) {
+     width: 90%;
+  }
+
+  .screen {
+     background: rgb(214, 231, 181);
+     border-width: 4px;
+     border-color: rgb(175, 189, 147);
+     border-style: outset;
+     outline: none;
+  }
+
+  .btn {
+     box-shadow: 0 4px 8px #000;
+     background-image: linear-gradient(white, #bbb);
+
+     &:hover {
+        opacity: 0.9;
+     }
+     &:active {
+        transform: translateY(3px);
+     }
+
+     @media screen and (max-width: 576px) {
+        font-size: 1rem !important;
+     }
+  }
+}
